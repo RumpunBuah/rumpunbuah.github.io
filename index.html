@@ -1,0 +1,1780 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rumpun Buah - Toko Buah Madiun</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
+      <div class="container">
+        <a
+          class="navbar-brand fw-bold d-flex align-items-center"
+          href="#"
+          style="color: var(--primary-color)"
+        >
+          <img
+            src="img/fav.ico"
+            alt="Logo Rumpun Buah"
+            width="28"
+            height="28"
+            class="me-2"
+          />
+          Rumpun Buah
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="#home">Beranda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#produk">Produk</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#tentang">Tentang Kami</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#testimoni">Testimoni</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#kontak">Kontak</a>
+            </li>
+            <li class="nav-item ms-lg-3 mt-2 mt-lg-0">
+              <a href="#produk" class="btn btn-outline-primary"
+                >Beli Sekarang</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section text-center" id="home">
+      <div class="container">
+        <h1 class="display-4 fw-bold mb-4">
+          Belanja Praktis, Buah & Sayur Segar Setiap Hari
+        </h1>
+        <p class="lead mb-5">
+          Pesan Sekarang, Antar Sampai Rumah dengan Kualitas Terbaik
+        </p>
+        <a href="#produk" class="btn btn-primary btn-lg px-4 me-2"
+          >Lihat Produk</a
+        >
+        <a href="#tentang" class="btn btn-outline-light btn-lg px-4"
+          >Tentang Kami</a
+        >
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-5">
+      <div class="container">
+        <div class="row text-center g-4">
+          <div class="col-md-2">
+            <div class="feature-icon">
+              <i class="fas fa-users"></i>
+            </div>
+            <h3>Dukung Petani Lokal</h3>
+            <p class="text-muted">
+              Setiap pembelian Anda membantu petani lokal berkembang lebih baik.
+            </p>
+          </div>
+          <div class="col-md-2">
+            <div class="feature-icon">
+              <i class="fas fa-box-open"></i>
+            </div>
+            <h3>Paket Hemat Keluarga</h3>
+            <p class="text-muted">
+              Special Mix Box: Beragam buah & sayur segar dengan harga lebih
+              terjangkau untuk kebutuhan mingguan.
+            </p>
+          </div>
+          <div class="col-md-2">
+            <div class="feature-icon">
+              <i class="fas fa-phone-volume"></i>
+            </div>
+            <h3>Pesan Mudah</h3>
+            <p class="text-muted">
+              Cukup WA atau klik website—kami siap antar ke rumah Anda!
+            </p>
+          </div>
+          <div class="col-md-2">
+            <div class="feature-icon">
+              <i class="fas fa-seedling"></i>
+            </div>
+            <h3>100% Organik</h3>
+            <p class="text-muted">
+              Buah-buahan kami ditanam tanpa pestisida dan bahan kimia berbahaya
+            </p>
+          </div>
+          <div class="col-md-2">
+            <div class="feature-icon">
+              <i class="fas fa-truck"></i>
+            </div>
+            <h3>Gratis Ongkir</h3>
+            <p class="text-muted">
+              Gratis pengiriman ke seluruh Kota Madiun untuk pembelian minimal
+              Rp 100.000. Hemat lebih, dapatkan lebih!
+            </p>
+          </div>
+          <div class="col-md-2">
+            <div class="feature-icon">
+              <i class="fas fa-hand-holding-heart"></i>
+            </div>
+            <h3>Garansi Segar</h3>
+            <p class="text-muted">
+              Uang kembali jika buah tidak segar saat sampai
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Produk Section -->
+    <section class="py-5 bg-light" id="produk">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="fw-bold">Produk Unggulan Kami</h2>
+          <p class="text-muted">Pilihan terbaik Rumpun Buah untuk Anda</p>
+        </div>
+
+        <div class="row g-4">
+          <!-- Product 1 -->
+          <div class="col-lg-3 col-md-6">
+            <div class="fruit-card card h-100">
+              <div class="position-relative">
+                <div
+                  id="carouselPisang"
+                  class="carousel slide"
+                  data-bs-ride="carousel"
+                >
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img
+                        src="img/pisang.jpg"
+                        class="fruit-img w-100"
+                        alt="pisang 1"
+                      />
+                    </div>
+                    <div class="carousel-item">
+                      <img
+                        src="img/pisang2.jpg"
+                        class="fruit-img w-100"
+                        alt="pisang 2"
+                      />
+                    </div>
+                    <div class="carousel-item">
+                      <img
+                        src="img/pisang3.jpg"
+                        class="fruit-img w-100"
+                        alt="pisang 3"
+                      />
+                    </div>
+                  </div>
+
+                  <button
+                    class="carousel-control-prev"
+                    type="button"
+                    data-bs-target="#carouselPisang"
+                    data-bs-slide="prev"
+                  >
+                    <span class="carousel-control-prev-icon"></span>
+                  </button>
+                  <button
+                    class="carousel-control-next"
+                    type="button"
+                    data-bs-target="#carouselPisang"
+                    data-bs-slide="next"
+                  >
+                    <span class="carousel-control-next-icon"></span>
+                  </button>
+                </div>
+                <span class="badge badge-discount">-20%</span>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Pisang Tanduk</h5>
+                <p class="text-muted">
+                  Pisang Tanduk daiambil dari petani lokal dari daerah Tulungagung,  pisang tanduk memiliki tekstur yang padat, rasa yang manis saat matang ini sangat cocok untuk diolah menjadi berbagai hidangan seperti pisang goreng, pisang kukus, atau getuk pisang.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="d-flex align-items-center">
+                    <span class="fw-bold text-primary fs-4">Rp 8.000/kg</span>
+                    <span class="text-decoration-line-through text-muted ms-2"
+                      >Rp 10.000</span
+                    >
+                    <!-- Tombol Info Produk di sebelah harga -->
+                    <a
+                      href="#"
+                      class="btn btn-info btn-sm ms-3"
+                      title="Informasi Produk"
+                      style="border-radius: 50%"
+                      data-bs-toggle="modal"
+                      data-bs-target="#modalPisang"
+                    >
+                      <i class="fas fa-info"></i>
+                    </a>
+                  </div>
+                  <a
+                    href="https://wa.me/6285706500927?text=Halo,%20saya%20mau%20pesan%20Pisang%20Tanduk"
+                    target="_blank"
+                    class="btn btn-sm btn-success"
+                  >
+                    Beli
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 2 -->
+          <div class="col-lg-3 col-md-6">
+            <div class="fruit-card card h-100">
+              <div class="position-relative">
+                <div
+                  id="carouselNanas"
+                  class="carousel slide"
+                  data-bs-ride="carousel"
+                >
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img
+                        src="img/nanas3.jpg"
+                        class="fruit-img w-100"
+                        alt="nanas 1"
+                      />
+                    </div>
+                    <div class="carousel-item">
+                      <img
+                        src="img/nanas2.jpg"
+                        class="fruit-img w-100"
+                        alt="nanas 2"
+                      />
+                    </div>
+                    <div class="carousel-item">
+                      <img
+                        src="img/nanas4.jpg"
+                        class="fruit-img w-100"
+                        alt="nanas 3"
+                      />
+                    </div>
+                  </div>
+
+                  <button
+                    class="carousel-control-prev"
+                    type="button"
+                    data-bs-target="#carouselNanas"
+                    data-bs-slide="prev"
+                  >
+                    <span class="carousel-control-prev-icon"></span>
+                  </button>
+                  <button
+                    class="carousel-control-next"
+                    type="button"
+                    data-bs-target="#carouselNanas"
+                    data-bs-slide="next"
+                  >
+                    <span class="carousel-control-next-icon"></span>
+                  </button>
+                </div>
+                <span class="badge badge-discount">-20%</span>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Nanas Madu</h5>
+                <p class="text-muted">
+                  Nanas madu super manis dengan sedikit rasa asam segar. Bisa
+                  pesan dikupas bersih, praktis untuk camilan sehat atau campuran es
+                  buah.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="d-flex align-items-center">
+                    <span class="fw-bold text-primary fs-4">Rp 8.000</span>
+                    <span class="text-decoration-line-through text-muted ms-2"
+                      >Rp 10.000</span
+                    >
+                    <!-- Tombol Info Produk di sebelah harga -->
+                    <a
+                      href="#"
+                      class="btn btn-info btn-sm ms-3"
+                      title="Informasi Produk"
+                      style="border-radius: 50%"
+                      data-bs-toggle="modal"
+                      data-bs-target="#modalNanas"
+                    >
+                      <i class="fas fa-info"></i>
+                    </a>
+                  </div>
+                  <a
+                    href="https://wa.me/6285706500927?text=Halo,%20saya%20mau%20pesan%20Nanas%20Madu"
+                    target="_blank"
+                    class="btn btn-sm btn-success"
+                  >
+                    Beli
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 3 -->
+          <div class="col-lg-3 col-md-6">
+            <div class="fruit-card card h-100">
+              <div class="position-relative">
+                <div
+                  id="carouselLabu"
+                  class="carousel slide"
+                  data-bs-ride="carousel"
+                >
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img
+                        src="img/labu.jpg"
+                        class="fruit-img w-100"
+                        alt="labu 1"
+                      />
+                    </div>
+                    <div class="carousel-item">
+                      <img
+                        src="img/labu2.jpg"
+                        class="fruit-img w-100"
+                        alt="labu 2"
+                      />
+                    </div>
+                    <div class="carousel-item">
+                      <img
+                        src="img/labu3.jpg"
+                        class="fruit-img w-100"
+                        alt="labu 3"
+                      />
+                    </div>
+                  </div>
+
+                  <button
+                    class="carousel-control-prev"
+                    type="button"
+                    data-bs-target="#carouselLabu"
+                    data-bs-slide="prev"
+                  >
+                    <span class="carousel-control-prev-icon"></span>
+                  </button>
+                  <button
+                    class="carousel-control-next"
+                    type="button"
+                    data-bs-target="#carouselLabu"
+                    data-bs-slide="next"
+                  >
+                    <span class="carousel-control-next-icon"></span>
+                  </button>
+                </div>
+                <span class="badge badge-discount">-20%</span>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Labu</h5>
+                <p class="text-muted">
+                  "Walo kuning" adalah istilah lain untuk labu kuning, jenis buah yang kaya nutrisi seperti serat, vitamin A, dan antioksidan, yang baik untuk kesehatan mata, sistem kekebalan tubuh, dan kesehatan jantung. Labu kuning juga dapat membantu mengontrol gula darah dan baik dikonsumsi sebagai bagian dari diet sehat. 
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="d-flex align-items-center">
+                    <span class="fw-bold text-primary fs-4">Rp 8.000/kg</span>
+                    <span class="text-decoration-line-through text-muted ms-2"
+                      >Rp 10.000</span
+                    >
+                    <!-- Tombol Info Produk di sebelah harga -->
+                    <a
+                      href="#"
+                      class="btn btn-info btn-sm ms-3"
+                      title="Informasi Produk"
+                      style="border-radius: 50%"
+                      data-bs-toggle="modal"
+                      data-bs-target="#modalLabu"
+                    >
+                      <i class="fas fa-info"></i>
+                    </a>
+                  </div>
+                  <a
+                    href="https://wa.me/6285706500927?text=Halo,%20saya%20mau%20pesan%20Labu%20Kuning"
+                    target="_blank"
+                    class="btn btn-sm btn-success"
+                  >
+                    Beli
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 4 -->
+          <div class="col-lg-3 col-md-6">
+            <div class="fruit-card card h-100">
+              <div class="position-relative">
+                <div
+                  id="carouselPepaya"
+                  class="carousel slide"
+                  data-bs-ride="carousel"
+                >
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img
+                        src="img/Pepaya.jpg"
+                        class="fruit-img w-100"
+                        alt="pepaya 1"
+                      />
+                    </div>
+                    <div class="carousel-item">
+                      <img
+                        src="img/Pepaya2.jpg"
+                        class="fruit-img w-100"
+                        alt="pepaya 2"
+                      />
+                    </div>
+                    <div class="carousel-item">
+                      <img
+                        src="img/ppykupas.jpg"
+                        class="fruit-img w-100"
+                        alt="pepaya 3"
+                      />
+                    </div>
+                  </div>
+
+                  <button
+                    class="carousel-control-prev"
+                    type="button"
+                    data-bs-target="#carouselPepaya"
+                    data-bs-slide="prev"
+                  >
+                    <span class="carousel-control-prev-icon"></span>
+                  </button>
+                  <button
+                    class="carousel-control-next"
+                    type="button"
+                    data-bs-target="#carouselPepaya"
+                    data-bs-slide="next"
+                  >
+                    <span class="carousel-control-next-icon"></span>
+                  </button>
+                </div>
+                <span class="badge badge-discount">-20%</span>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Pepaya</h5>
+                <p class="text-muted">
+                  Pepaya Thailand, juga dikenal sebagai Pepaya Bangkok, adalah varietas pepaya unggulan di Indonesia yang populer karena ukurannya yang besar (bisa mencapai 3-5 kg), daging buahnya yang tebal, serta rasa manis dan segar dengan tekstur padat berwarna jingga kemerahan.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="d-flex align-items-center">
+                    <span class="fw-bold text-primary fs-4">Rp 8.000/kg</span>
+                    <span class="text-decoration-line-through text-muted ms-2"
+                      >Rp 10.000</span
+                    >
+                    <!-- Tombol Info Produk di sebelah harga -->
+                    <a
+                      href="#"
+                      class="btn btn-info btn-sm ms-3"
+                      title="Informasi Produk"
+                      style="border-radius: 50%"
+                      data-bs-toggle="modal"
+                      data-bs-target="#modalPepaya"
+                    >
+                      <i class="fas fa-info"></i>
+                    </a>
+                  </div>
+                  <a
+                    href="https://wa.me/6285706500927?text=Halo,%20saya%20mau%20pesan%20Pepaya%20Kuning"
+                    target="_blank"
+                    class="btn btn-sm btn-success"
+                  >
+                    Beli
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 4: Nangka -->
+<div class="col-lg-3 col-md-6">
+  <div class="fruit-card card h-100">
+    <div class="position-relative">
+      <div id="carouselNangka" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/nangka1.jpg" class="fruit-img w-100" alt="nangka 1"/>
+          </div>
+          <div class="carousel-item">
+            <img src="img/nangka2.jpg" class="fruit-img w-100" alt="nangka 2"/>
+          </div>
+          <div class="carousel-item">
+            <img src="img/nangka3.jpg" class="fruit-img w-100" alt="nangka 3"/>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselNangka" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselNangka" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+      <span class="badge badge-discount">-15%</span>
+    </div>
+    <div class="card-body">
+      <h5 class="card-title">Nangka</h5>
+      <p class="text-muted">
+        Buah nangka terkenal dengan daging buahnya yang manis dan aromanya yang khas. Kaya akan serat, vitamin C, serta mineral penting yang membantu pencernaan, meningkatkan energi, dan menjaga kesehatan kulit.
+      </p>
+      <div class="d-flex justify-content-between align-items-center">
+        <div class="d-flex align-items-center">
+          <span class="fw-bold text-primary fs-4">Rp 15.000/kg</span>
+          <span class="text-decoration-line-through text-muted ms-2">Rp 18.000</span>
+          <a href="#" class="btn btn-info btn-sm ms-3" title="Informasi Produk" style="border-radius: 50%" data-bs-toggle="modal" data-bs-target="#modalNangka">
+            <i class="fas fa-info"></i>
+          </a>
+        </div>
+        <a href="https://wa.me/6285706500927?text=Halo,%20saya%20mau%20pesan%20Nangka" target="_blank" class="btn btn-sm btn-success">Beli</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Product 5: Sukun -->
+<div class="col-lg-3 col-md-6">
+  <div class="fruit-card card h-100">
+    <div class="position-relative">
+      <div id="carouselSukun" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/sukun1.jpg" class="fruit-img w-100" alt="sukun 1"/>
+          </div>
+          <div class="carousel-item">
+            <img src="img/sukun2.jpg" class="fruit-img w-100" alt="sukun 2"/>
+          </div>
+          <div class="carousel-item">
+            <img src="img/sukun3.jpg" class="fruit-img w-100" alt="sukun 3"/>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselSukun" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselSukun" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+      <span class="badge badge-discount">-10%</span>
+    </div>
+    <div class="card-body">
+      <h5 class="card-title">Sukun</h5>
+      <p class="text-muted">
+        Sukun adalah buah tropis yang bisa diolah menjadi berbagai makanan lezat. Mengandung karbohidrat tinggi, vitamin, serta mineral yang memberikan energi, baik untuk pengganti nasi atau camilan sehat.
+      </p>
+      <div class="d-flex justify-content-between align-items-center">
+        <div class="d-flex align-items-center">
+          <span class="fw-bold text-primary fs-4">Rp 12.000</span>
+          <span class="text-decoration-line-through text-muted ms-2">Rp 13.500</span>
+          <a href="#" class="btn btn-info btn-sm ms-3" title="Informasi Produk" style="border-radius: 50%" data-bs-toggle="modal" data-bs-target="#modalSukun">
+            <i class="fas fa-info"></i>
+          </a>
+        </div>
+        <a href="https://wa.me/6285706500927?text=Halo,%20saya%20mau%20pesan%20Sukun" target="_blank" class="btn btn-sm btn-success">Beli</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Product 6: Mangga -->
+<div class="col-lg-3 col-md-6">
+  <div class="fruit-card card h-100">
+    <div class="position-relative">
+      <div id="carouselMangga" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/mangga1.jpg" class="fruit-img w-100" alt="mangga 1"/>
+          </div>
+          <div class="carousel-item">
+            <img src="img/mangga2.jpg" class="fruit-img w-100" alt="mangga 2"/>
+          </div>
+          <div class="carousel-item">
+            <img src="img/mangga3.jpg" class="fruit-img w-100" alt="mangga 3"/>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselMangga" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselMangga" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+      <span class="badge badge-discount">-25%</span>
+    </div>
+    <div class="card-body">
+      <h5 class="card-title">Mangga</h5>
+      <p class="text-muted">
+        Buah mangga segar dengan rasa manis legit serta kaya vitamin C, A, dan antioksidan. Bermanfaat untuk menjaga daya tahan tubuh, baik untuk kulit, serta sangat cocok dijadikan jus atau dimakan langsung.
+      </p>
+      <div class="d-flex justify-content-between align-items-center">
+        <div class="d-flex align-items-center">
+          <span class="fw-bold text-primary fs-4">Rp 20.000/kg</span>
+          <span class="text-decoration-line-through text-muted ms-2">Rp 27.000</span>
+          <a href="#" class="btn btn-info btn-sm ms-3" title="Informasi Produk" style="border-radius: 50%" data-bs-toggle="modal" data-bs-target="#modalMangga">
+            <i class="fas fa-info"></i>
+          </a>
+        </div>
+        <a href="https://wa.me/6285706500927?text=Halo,%20saya%20mau%20pesan%20Mangga" target="_blank" class="btn btn-sm btn-success">Beli</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Product 7: Ubi -->
+<div class="col-lg-3 col-md-6">
+  <div class="fruit-card card h-100">
+    <div class="position-relative">
+      <div id="carouselUbi" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/ubi1.jpg" class="fruit-img w-100" alt="ubi 1"/>
+          </div>
+          <div class="carousel-item">
+            <img src="img/ubi2.jpg" class="fruit-img w-100" alt="ubi 2"/>
+          </div>
+          <div class="carousel-item">
+            <img src="img/ubi3.jpg" class="fruit-img w-100" alt="ubi 3"/>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselUbi" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselUbi" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+      <span class="badge badge-discount">-18%</span>
+    </div>
+    <div class="card-body">
+      <h5 class="card-title">Ubi</h5>
+      <p class="text-muted">
+        Ubi manis mengandung serat tinggi, vitamin A, serta antioksidan yang baik untuk kesehatan pencernaan dan mata. Cocok direbus, digoreng, atau dijadikan camilan sehat rendah lemak.
+      </p>
+      <div class="d-flex justify-content-between align-items-center">
+        <div class="d-flex align-items-center">
+          <span class="fw-bold text-primary fs-4">Rp 8.000/kg</span>
+          <span class="text-decoration-line-through text-muted ms-2">Rp 10.000</span>
+          <a href="#" class="btn btn-info btn-sm ms-3" title="Informasi Produk" style="border-radius: 50%" data-bs-toggle="modal" data-bs-target="#modalUbi">
+            <i class="fas fa-info"></i>
+          </a>
+        </div>
+        <a href="https://wa.me/6285706500927?text=Halo,%20saya%20mau%20pesan%20Ubi" target="_blank" class="btn btn-sm btn-success">Beli</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+        <div class="text-center mt-5">
+          <a href="#" class="btn btn-outline-primary">Lihat Semua Produk</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tentang Kami Section -->
+    <section class="py-5" id="tentang">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6 mb-4 mb-lg-0">
+            <div
+              id="carouselTentang"
+              class="carousel slide"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-inner rounded shadow">
+                <div class="carousel-item active">
+                  <img
+                    src="img/backkk.jpg"
+                    class="img-fluid w-100"
+                    alt="Toko Buah 1"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="img/sukun1.jpg"
+                    class="img-fluid w-100"
+                    alt="Toko Buah 2"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="img/toko4.jpg"
+                    class="img-fluid w-100"
+                    alt="Toko Buah 3"
+                  />
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselTentang"
+                data-bs-slide="prev"
+              >
+                <span class="carousel-control-prev-icon"></span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselTentang"
+                data-bs-slide="next"
+              >
+                <span class="carousel-control-next-icon"></span>
+              </button>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <h2 class="fw-bold mb-4">Tentang Rumpun Buah</h2>
+            <p>
+              Rumpun Buah adalah UMKM rumahan yang berlokasi di Jl. Kertamulya No. 22, setiap hari melayani
+              pelanggan di ,<a href="https://maps.app.goo.gl/ahekDWTS9CfcZAao6"
+                    class="text-decoration-none"
+                    >depan Pasar Njoyo, Madiun.
+                  </a> dan sesekali membuka cabang lapak tambahan di <a href="https://maps.app.goo.gl/HCBQScjT9D5GLof17"
+                    class="text-decoration-none"
+                    >Jl. setia budi.
+                  </a> Kami spesialis dalam menyediakan berbagai buah segar lokal pilihan dari Madiun, Kediri, hingga Tulungagung,
+              yang dikenal dengan kualitas rasa dan kesegarannya.
+
+
+            </p>
+            <p>
+              Sebagai usaha kecil yang dekat dengan petani 
+              lokal, kami menghadirkan buah dengan harga yang kompetitif dan terjangkau, tanpa mengurangi kualitas.
+Komitmen kami adalah menjaga kepercayaan pelanggan dengan buah yang segar, sehat, dan selalu siap menemani setiap momen keluarga Anda.
+            </p>
+
+            <div class="row mt-4">
+              <div class="col-md-6 mb-3">
+                <div class="d-flex align-items-center">
+                  <div class="bg-primary text-white rounded-circle p-3 me-3">
+                    <i class="fas fa-leaf"></i>
+                  </div>
+                  <div>
+                    <h5 class="mb-0">100% Segar</h5>
+                    <small class="text-muted"
+                      >Dikirim langsung setelah panen</small
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 mb-3">
+               
+              </div>
+            </div>
+
+            <a href="#kontak" class="btn btn-primary mt-2">Hubungi Kami</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimoni Section -->
+    <section class="py-5 bg-light" id="testimoni">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="fw-bold">Apa Kata Pelanggan</h2>
+          <p class="text-muted">Testimoni dari pelanggan setia kami</p>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="p-4 bg-white testmonial-card">
+              <div class="d-flex mb-3">
+                <img
+                  src="https://randomuser.me/api/portraits/women/32.jpg"
+                  class="rounded-circle me-3"
+                  width="50"
+                  height="50"
+                  alt="Testimoni"
+                />
+                <div>
+                  <h6 class="mb-0">Siti Rahayu</h6>
+                  <div class="text-warning">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                </div>
+              </div>
+              <p class="mb-0">
+                "Saya sudah berlangganan buah disini selama 2 tahun. Rasanya
+                selalu segar dan manis. Pelayanannya juga cepat dan ramah."
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="p-4 bg-white testmonial-card">
+              <div class="d-flex mb-3">
+                <img
+                  src="https://randomuser.me/api/portraits/men/54.jpg"
+                  class="rounded-circle me-3"
+                  width="50"
+                  height="50"
+                  alt="Testimoni"
+                />
+                <div>
+                  <h6 class="mb-0">Budi Santoso</h6>
+                  <div class="text-warning">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                  </div>
+                </div>
+              </div>
+              <p class="mb-0">
+                "Buah jeruk Medannya selalu juicy dan segar. Anak-anak saya suka
+                sekali. Pengiriman tepat waktu setiap kali."
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="p-4 bg-white testmonial-card">
+              <div class="d-flex mb-3">
+                <img
+                  src="https://randomuser.me/api/portraits/women/45.jpg"
+                  class="rounded-circle me-3"
+                  width="50"
+                  height="50"
+                  alt="Testimoni"
+                />
+                <div>
+                  <h6 class="mb-0">Dewi Anggraeni</h6>
+                  <div class="text-warning">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                </div>
+              </div>
+              <p class="mb-0">
+                "Pisangnya selalu matang sempurna dan manis. Sekarang saya
+                selalu beli buah untuk keluarga hanya di Rumpun Buah."
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Kontak Section -->
+    <section class="py-5" id="kontak">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="fw-bold">Hubungi Kami</h2>
+          <p class="text-muted">
+            Kami siap melayani kebutuhan Rumpun Buah Anda
+          </p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6 mb-4 mb-lg-0">
+            <div class="card border-0 shadow-sm">
+              <div class="card-body p-5">
+                <h4 class="mb-4">Buat Pesanan</h4>
+                <form id="formPesan">
+                  <div class="mb-3">
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="nama"
+                      placeholder="Nama Anda"
+                      required
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="alamat"
+                      placeholder="Alamat Anda"
+                      required
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <textarea
+                      class="form-control"
+                      id="pesanan"
+                      rows="4"
+                      placeholder="Pesanan Anda"
+                      required
+                    ></textarea>
+                  </div>
+                  <button type="submit" class="btn btn-primary w-100">
+                    Kirim Pesan
+                  </button>
+                </form>
+              </div>
+            </div>
+
+            <script>
+              document
+                .getElementById("formPesan")
+                .addEventListener("submit", function (e) {
+                  e.preventDefault();
+
+                  let nama = document.getElementById("nama").value;
+                  let alamat = document.getElementById("alamat").value;
+                  let pesanan = document.getElementById("pesanan").value;
+
+                  // Ganti dengan nomor WA tujuan (tanpa + atau 0 di depan, langsung kode negara)
+                  let nomorWA = "6285706500927";
+
+                  let text = `Halo, saya ingin memesan:%0A%0ANama: ${nama}%0AAlamat: ${alamat}%0APesanan: ${pesanan}`;
+
+                  let url = `https://wa.me/${nomorWA}?text=${text}`;
+                  window.open(url, "_blank");
+                });
+            </script>
+          </div>
+          
+          <div class="col-lg-6">
+            <div class="h-100 p-5 bg-light rounded">
+              <h4 class="mb-4">Kontak & Informasi</h4>
+              <div class="d-flex mb-4">
+                <div class="me-3 text-primary">
+                  <i class="fas fa-phone-alt fs-4"></i>
+                </div>
+                <div>
+                  <h6 class="mb-1">Telepon/WhatsApp</h6>
+                  <a
+                    href="https://wa.me/6285706500927"
+                    class="text-decoration-none"
+                  >
+                    <p class="mb-0">+62 857-0650-0927</p>
+                  </a>
+                </div>
+              </div>
+              <div class="d-flex mb-4">
+                <div class="me-3 text-primary">
+                  <i class="fas fa-envelope fs-4"></i>
+                </div>
+                <div>
+                  <h6 class="mb-1">Email</h6>
+                  <p class="mb-0">rumpunbuah@gmail.com</p>
+                </div>
+              </div>
+          <!-- Lokasi Rumah -->
+<div class="d-flex mb-4"> 
+  <div class="me-3 text-primary">
+    <i class="fas fa-map-marker-alt fs-4"></i>
+  </div>
+  <div>
+    <h6 class="mb-1">Lokasi Rumah</h6>
+    <p class="mb-0">
+      Jl. Kertamulya No. 22, Kelurahan Rejomulyo, Kecamatan Kartoharjo, Kota Madiun, Jawa Timur, 63111
+    </p>
+    <a
+      href="https://maps.app.goo.gl/5EVcEZKJcWrAAkq56?g_st=aw"
+      class="text-decoration-none"
+      target="_blank"
+      >Lihat di Google Maps →</a>
+  </div>
+</div>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1046.024083953969!2d111.53752836080577!3d-7.623357745964484!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e79bfbea9d07ac7%3A0x427d043347e25f95!2sRumpun%20Buah!5e0!3m2!1sid!2sid!4v1757670644649!5m2!1sid!2sid" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+<!-- Lokasi Lapak Pasar Njoyo -->
+<div class="d-flex mb-4"> 
+  <div class="me-3 text-primary">
+    <i class="fas fa-map-marker-alt fs-4"></i>
+  </div>
+  <div>
+    <h6 class="mb-1">Lapak Depan Pasar Njoyo</h6>
+    <p class="mb-0">
+      Depan Pasar Njoyo, Kota Madiun, Jawa Timur
+    </p>
+    <a
+      href="https://maps.app.goo.gl/LUUm3vm414KKr8TN8" 
+      class="text-decoration-none"
+      target="_blank"
+      >Lihat di Google Maps →</a>
+  </div>
+  
+</div>
+
+
+<!-- Lokasi Jl. Setiabudi -->
+<div class="d-flex mb-4"> 
+  <div class="me-3 text-primary">
+    <i class="fas fa-map-marker-alt fs-4"></i>
+  </div>
+  <div>
+    <h6 class="mb-1">Lapak Jl. Setiabudi</h6>
+    <p class="mb-0">
+      Jl. Setiabudi, Kota Madiun, Jawa Timur
+    </p>
+    <a
+      href="https://maps.app.goo.gl/FaEtSjmzTZzhdVyf9" 
+      class="text-decoration-none"
+      target="_blank"
+      >Lihat di Google Maps →</a>
+  </div>
+</div>
+              <div class="d-flex mb-4">
+                <div class="me-3 text-primary">
+                  <i class="fas fa-clock fs-4"></i>
+                </div>
+            <div> 
+  <h6 class="mb-1">Jam Operasional</h6>
+  <p class="mb-0"><strong>Rumah:</strong> Buka setiap hari, 24 Jam</p>
+  <p class="mb-0"><strong>Lapak depan Pasar Njoyo:</strong> Setiap hari, 06.00 - 12.00 WIB</p>
+  <p class="mb-0"><strong>Lapak Jl. Setiabudi:</strong> Selasa - Kamis, 08.00 - 16.00 WIB</p>
+</div>
+
+              </div>
+              <div>
+                <a
+                  href="https://wa.me/6285706500927?text=Halo,+apakah+disini+adalah+Rumpun+Buah+?"
+                  class="btn btn-wa w-100 mb-3"
+                >
+                  <i class="fab fa-whatsapp me-2"></i> Hubungi via WhatsApp
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer py-5">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-lg-4">
+            <div class="footer-logo mb-3">
+            <img
+            src="img/fav.ico"
+            alt="Logo Rumpun Buah"
+            width="28"
+            height="28"
+            class="me-2"
+          /></i>Rumpun Buah
+            </div>
+            <p>
+              Toko buah berkualitas "Segar, Sehat, Hemat".
+            </p>
+            <div class="mt-4">
+              <a href="#" class="social-icon bg-primary me-2"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="#" class="social-icon bg-danger me-2"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="#" class="social-icon bg-dark me-2"
+                ><i class="fab fa-tiktok"></i
+              ></a>
+              <a href="#" class="social-icon bg-success me-2"
+                ><i class="fab fa-whatsapp"></i
+              ></a>
+              <a href="#" class="social-icon bg-danger me-2"
+                ><i class="fab fa-youtube"></i
+              ></a>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-4">
+            <h5 class="mb-3">Menu</h5>
+            <ul class="list-unstyled">
+              <li class="mb-2"><a href="#home">Beranda</a></li>
+              <li class="mb-2"><a href="#produk">Produk</a></li>
+              <li class="mb-2"><a href="#tentang">Tentang Kami</a></li>
+              <li class="mb-2"><a href="#testimoni">Testimoni</a></li>
+              <li class="mb-2"><a href="#kontak">Kontak</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-2 col-md-4">
+            <h5 class="mb-3">Produk</h5>
+            <ul class="list-unstyled">
+              <li class="mb-2"><a href="#">Buah Lokal</a></li>
+              <li class="mb-2"><a href="#">Buah Impor</a></li>
+              <li class="mb-2"><a href="#">Buah Organik</a></li>
+              <li class="mb-2"><a href="#">Buah Premium</a></li>
+              <li class="mb-2"><a href="#">Paket Buah</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-4 col-md-4"> 
+  <h5 class="mb-3">Newsletter</h5>
+  <p>Berlangganan untuk mendapatkan promo dan info produk terbaru</p>
+  <form class="mb-3" id="newsletterForm">
+    <div class="input-group">
+      <input
+        type="email"
+        id="newsletterEmail"
+        class="form-control"
+        placeholder="Email Anda"
+        required
+      />
+      <button class="btn btn-primary" type="submit">Daftar</button>
+    </div>
+  </form>
+  <div class="d-flex align-items-center">
+    <i class="fas fa-phone-alt me-2"></i>
+    <div>
+      <small class="d-block">Butuh bantuan?</small>
+      <a href="tel:+6285706500927" class="text-light">+62 857-0650-0927</a>
+    </div>
+  </div>
+</div>
+
+<script>
+  document.getElementById("newsletterForm").addEventListener("submit", function(e) {
+    e.preventDefault(); // cegah submit normal
+    let email = document.getElementById("newsletterEmail").value;
+    let phone = "6285706500927"; // nomor WA tujuan (tanpa +)
+    let message = `Halo, saya ingin daftar newsletter dengan email: ${email}`;
+    let url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
+    window.open(url, "_blank"); // buka WhatsApp
+  });
+</script>
+
+    
+         
+        </div>
+        <hr class="my-4 bg-secondary" />
+        <!-- Footer -->
+        <div class="row">
+          <div class="col-md-6 text-center text-md-start">
+            <p class="mb-0">
+              &copy; <span id="year"></span> Rumpun Buah. All rights reserved.
+            </p>
+          </div>
+          <div class="col-md-6 text-center text-md-end">
+            <!-- Trigger pop-up -->
+            <a
+              href="#"
+              class="me-3"
+              data-bs-toggle="modal"
+              data-bs-target="#termsModal"
+              >Syarat & Ketentuan</a
+            >
+            <a href="#" data-bs-toggle="modal" data-bs-target="#privacyModal"
+              >Kebijakan Privasi</a
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Modal Syarat & Ketentuan -->
+    <div class="modal fade" id="termsModal" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Syarat & Ketentuan</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p>
+              Dengan menggunakan layanan Rumpun Buah, Anda setuju untuk tidak
+              menyalin, menyebarkan, atau memperjualbelikan konten tanpa izin.
+              Harga dan ketersediaan produk dapat berubah sewaktu-waktu. Informasi selengkapnya bisa menghubungi via WhatsApp
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Tutup
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Kebijakan Privasi -->
+    <div class="modal fade" id="privacyModal" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Kebijakan Privasi</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p>
+              Kami menjaga kerahasiaan data Anda. Informasi pribadi hanya
+              digunakan untuk keperluan transaksi dan tidak dibagikan kepada
+              pihak ketiga tanpa persetujuan Anda.
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Tutup
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Script Tahun Otomatis -->
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+
+    <!-- Modal untuk Pisang Tanduk -->
+    <div
+      class="modal fade"
+      id="modalPisang"
+      tabindex="-1"
+      aria-labelledby="modalPisangLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalPisangLabel">Pisang Tanduk</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <img
+              src="img/pisang.jpg"
+              class="img-fluid mb-3"
+              alt="Pisang Tanduk"
+            />
+            <p>
+              Detail: Pisang Tanduk dari Trenggalek/Tulungagung, tekstur padat,
+              cocok untuk goreng, kukus, getuk pisang.
+            </p>
+            <h6>Tips:</h6>
+            <ul>
+              <li>Goreng dengan tepung untuk camilan renyah.</li>
+              <li>Kukus untuk sarapan sehat.</li>
+              <li>Bisa dibuat kolak atau cake pisang.</li>
+            </ul>
+            <h6>Info Lengkap:</h6>
+            <p>
+              Pisang Tanduk kaya serat, vitamin B6, dan potasium. Simpan di suhu
+              ruang, hindari sinar matahari langsung.
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Tutup
+            </button>
+            <a href="detail-pisang.html" target="_blank" class="btn btn-primary"
+              >Lihat Detail Lengkap</a
+            >
+            <button
+              type="button"
+              class="btn btn-warning text-white"
+              onclick="shareProduct('Belimbing Manis','detail-belimbing.html')"
+            >
+              <i class="fas fa-share-alt"></i> Share
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal untuk Pepaya -->
+    <div
+      class="modal fade"
+      id="modalPepaya"
+      tabindex="-1"
+      aria-labelledby="modalPepayaLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalPepayaLabel">Pepaya Thailand</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <img
+              src="img/Pepaya.jpg"
+              class="img-fluid mb-3"
+              alt="Pepaya Thailand"
+            />
+            <p>
+              Detail: Pepaya Thailand segar, daging tebal, rasanya manis segar
+              cocok untuk konsumsi langsung atau jus.
+            </p>
+            <h6>Tips:</h6>
+            <ul>
+              <li>Potong dadu untuk camilan sehat.</li>
+              <li>Buat jus pepaya segar tanpa gula.</li>
+              <li>Dapat dijadikan campuran es buah.</li>
+            </ul>
+            <h6>Info Lengkap:</h6>
+            <p>
+              Pepaya kaya vitamin A, C, dan serat. Baik untuk pencernaan dan
+              daya tahan tubuh. Simpan di suhu ruang hingga matang, lalu
+              pindahkan ke kulkas agar tahan lebih lama.
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Tutup
+            </button>
+            <a
+              href="detail-pepaya.html"
+              target="_blank"
+              class="btn btn-primary"
+            >
+              Lihat Detail Lengkap
+            </a>
+            <button
+              type="button"
+              class="btn btn-warning text-white"
+              onclick="shareProduct('Pepaya Thailand','detail-pepaya.html')"
+            >
+              <i class="fas fa-share-alt"></i> Share
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal untuk Jeruk -->
+    <div
+      class="modal fade"
+      id="modalJeruk"
+      tabindex="-1"
+      aria-labelledby="modalJerukLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalJerukLabel">Jeruk Manis</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <img src="img/jeruk.jpg" class="img-fluid mb-3" alt="Jeruk Manis" />
+            <p>
+              Detail: Jeruk manis segar dengan rasa manis alami dan sedikit
+              asam. Cocok untuk jus atau dimakan langsung.
+            </p>
+            <h6>Tips:</h6>
+            <ul>
+              <li>Peras untuk dibuat jus segar.</li>
+              <li>Dijadikan infused water dengan tambahan daun mint.</li>
+              <li>Dikupas langsung untuk camilan sehat.</li>
+            </ul>
+            <h6>Info Lengkap:</h6>
+            <p>
+              Jeruk kaya vitamin C dan antioksidan yang mendukung sistem imun.
+              Simpan di kulkas agar lebih awet dan segar saat dikonsumsi.
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Tutup
+            </button>
+            <a href="detail-jeruk.html" target="_blank" class="btn btn-primary">
+              Lihat Detail Lengkap
+            </a>
+            <button
+              type="button"
+              class="btn btn-warning text-white"
+              onclick="shareProduct('Jeruk Manis','detail-jeruk.html')"
+            >
+              <i class="fas fa-share-alt"></i> Share
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal untuk Belimbing -->
+    <div
+      class="modal fade"
+      id="modalBelimbing"
+      tabindex="-1"
+      aria-labelledby="modalBelimbingLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalBelimbingLabel">
+              Belimbing Manis
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <img
+              src="img/belimbing.jpg"
+              class="img-fluid mb-3"
+              alt="Belimbing Manis"
+            />
+            <p>
+              Detail: Belimbing manis segar dengan rasa khas yang menyegarkan.
+              Bisa dimakan langsung atau dibuat jus.
+            </p>
+            <h6>Tips:</h6>
+            <ul>
+              <li>Iris tipis untuk hiasan makanan atau minuman.</li>
+              <li>Jadikan jus segar tanpa tambahan gula.</li>
+              <li>Cocok untuk campuran rujak segar.</li>
+            </ul>
+            <h6>Info Lengkap:</h6>
+            <p>
+              Belimbing mengandung vitamin C, serat, dan rendah kalori. Baik
+              untuk kesehatan pencernaan dan menjaga daya tahan tubuh. Simpan di
+              kulkas agar tetap segar.
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Tutup
+            </button>
+            <a
+              href="detail-belimbing.html"
+              target="_blank"
+              class="btn btn-primary"
+            >
+              Lihat Detail Lengkap
+            </a>
+            <button
+              type="button"
+              class="btn btn-warning text-white"
+              onclick="shareProduct('Belimbing Manis','detail-belimbing.html')"
+            >
+              <i class="fas fa-share-alt"></i> Share
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal untuk Nanas -->
+    <div
+      class="modal fade"
+      id="modalNanas"
+      tabindex="-1"
+      aria-labelledby="modalNanasLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalNanasLabel">Nanas Madu</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <img src="img/nanas.jpg" class="img-fluid mb-3" alt="Nanas Madu" />
+            <p>
+              Detail: Nanas madu super manis dengan sedikit rasa asam segar.
+              Bisa dipesan sudah dikupas bersih, praktis untuk camilan atau
+              campuran es buah.
+            </p>
+            <h6>Tips:</h6>
+            <ul>
+              <li>Potong dadu untuk campuran rujak atau salad buah.</li>
+              <li>Bisa dijus segar untuk minuman sehat.</li>
+              <li>Panggang sebentar untuk topping BBQ.</li>
+            </ul>
+            <h6>Info Lengkap:</h6>
+            <p>
+              Nanas madu kaya vitamin C, serat, dan antioksidan. Simpan di suhu
+              ruang atau kulkas agar tetap segar lebih lama.
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Tutup
+            </button>
+            <a href="detail-nanas.html" target="_blank" class="btn btn-primary"
+              >Lihat Detail Lengkap</a
+            >
+            <button
+              type="button"
+              class="btn btn-warning text-white"
+              onclick="shareProduct('Nanas Madu','detail-nanas.html')"
+            >
+              <i class="fas fa-share-alt"></i> Share
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+     
+    <!-- Modal untuk Labu Kuning -->
+<div
+  class="modal fade"
+  id="modalLabu"
+  tabindex="-1"
+  aria-labelledby="modalLabuLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalLabuLabel">Labu Kuning</h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="modal-body">
+        <img
+          src="img/labu.jpg"
+          class="img-fluid mb-3"
+          alt="Labu Kuning"
+        />
+        <p>
+          Detail: Labu kuning segar pilihan petani lokal, teksturnya lembut
+          dengan rasa manis alami. Cocok diolah untuk sup, kolak, bubur, atau
+          kue tradisional.
+        </p>
+        <h6>Tips:</h6>
+        <ul>
+          <li>Bisa dikukus sebagai MPASI bayi.</li>
+          <li>Dijadikan bahan dasar pie labu atau kue basah.</li>
+          <li>Dimasak jadi sayur bening atau sop labu yang hangat.</li>
+        </ul>
+        <h6>Info Lengkap:</h6>
+        <p>
+          Labu kuning kaya beta-karoten, vitamin A, dan serat. Baik untuk
+          kesehatan mata, pencernaan, serta meningkatkan daya tahan tubuh.
+          Simpan di tempat sejuk dan kering agar lebih tahan lama.
+        </p>
+      </div>
+      <div class="modal-footer">
+        <button
+          type="button"
+          class="btn btn-secondary"
+          data-bs-dismiss="modal"
+        >
+          Tutup
+        </button>
+        <a href="detail-labu.html" target="_blank" class="btn btn-primary">
+          Lihat Detail Lengkap
+        </a>
+        <button
+          type="button"
+          class="btn btn-warning"
+          onclick="navigator.share ? navigator.share({ title: 'Labu Kuning', text: 'Segar & manis alami, cocok untuk berbagai olahan.', url: window.location.href }) : alert('Fitur share tidak didukung di browser ini.')"
+        >
+          Share
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal Nangka -->
+<div class="modal fade" id="modalNangka" tabindex="-1" aria-labelledby="modalNangkaLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalNangkaLabel">Nangka</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img src="img/nangka1.jpg" class="img-fluid mb-3" alt="Nangka"/>
+        <p>Detail: Buah nangka segar dengan aroma khas, daging kuning manis legit, cocok dimakan langsung atau dibuat kolak.</p>
+        <h6>Tips:</h6>
+        <ul>
+          <li>Dapat diolah menjadi kolak atau campuran es buah.</li>
+          <li>Bisa dibuat keripik nangka kering yang tahan lama.</li>
+          <li>Campurkan ke dalam kue tradisional untuk aroma alami.</li>
+        </ul>
+        <h6>Info Lengkap:</h6>
+        <p>Nangka kaya serat, vitamin C, kalium, serta antioksidan. Membantu meningkatkan energi, kesehatan kulit, dan pencernaan.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+        <a href="detail-nangka.html" target="_blank" class="btn btn-primary">Lihat Detail Lengkap</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Sukun -->
+<div class="modal fade" id="modalSukun" tabindex="-1" aria-labelledby="modalSukunLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalSukunLabel">Sukun</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img src="img/sukun1.jpg" class="img-fluid mb-3" alt="Sukun"/>
+        <p>Detail: Buah sukun sering dijadikan pengganti nasi karena kandungan karbohidratnya tinggi.</p>
+        <h6>Tips:</h6>
+        <ul>
+          <li>Enak digoreng dengan sedikit garam sebagai camilan.</li>
+          <li>Dapat direbus untuk sarapan sehat.</li>
+          <li>Bisa dijadikan bahan dasar kue tradisional.</li>
+        </ul>
+        <h6>Info Lengkap:</h6>
+        <p>Sukun kaya akan karbohidrat, protein, vitamin, dan mineral. Baik untuk sumber energi, memperkuat imun, serta menjaga kesehatan pencernaan.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+        <a href="detail-sukun.html" target="_blank" class="btn btn-primary">Lihat Detail Lengkap</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Mangga -->
+<div class="modal fade" id="modalMangga" tabindex="-1" aria-labelledby="modalManggaLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalManggaLabel">Mangga</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img src="img/mangga1.jpg" class="img-fluid mb-3" alt="Mangga"/>
+        <p>Detail: Buah mangga manis, segar, cocok dijadikan jus, rujak, atau dimakan langsung.</p>
+        <h6>Tips:</h6>
+        <ul>
+          <li>Jadikan jus mangga segar untuk minuman sehat.</li>
+          <li>Dapat dibuat manisan atau selai.</li>
+          <li>Cocok dipotong untuk campuran salad buah.</li>
+        </ul>
+        <h6>Info Lengkap:</h6>
+        <p>Mangga mengandung vitamin A, vitamin C, serat, dan antioksidan yang baik untuk daya tahan tubuh, pencernaan, dan kesehatan kulit.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+        <a href="detail-mangga.html" target="_blank" class="btn btn-primary">Lihat Detail Lengkap</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Ubi -->
+<div class="modal fade" id="modalUbi" tabindex="-1" aria-labelledby="modalUbiLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalUbiLabel">Ubi</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img src="img/ubi1.jpg" class="img-fluid mb-3" alt="Ubi"/>
+        <p>Detail: Ubi manis dengan tekstur lembut, cocok direbus, digoreng, atau dijadikan cemilan sehat.</p>
+        <h6>Tips:</h6>
+        <ul>
+          <li>Dapat direbus sebagai camilan rendah kalori.</li>
+          <li>Dijadikan keripik ubi renyah untuk stok camilan.</li>
+          <li>Cocok untuk kue tradisional atau kolak.</li>
+        </ul>
+        <h6>Info Lengkap:</h6>
+        <p>Ubi mengandung vitamin A, serat, dan antioksidan tinggi. Membantu menjaga kesehatan mata, pencernaan, serta memberi energi lebih lama.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+        <a href="detail-ubi.html" target="_blank" class="btn btn-primary">Lihat Detail Lengkap</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <script>
+      function shareProduct(title, url) {
+        if (navigator.share) {
+          navigator
+            .share({
+              title: title,
+              text: "Lihat produk segar ini: " + title,
+              url: url,
+            })
+            .catch((err) => console.log("Share gagal:", err));
+        } else {
+          alert("Fitur share tidak didukung di browser ini.");
+        }
+      }
+    </script>
+  </body>
+</html>
+
+
+
